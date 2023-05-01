@@ -24,7 +24,7 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">Portfolio</a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
@@ -41,6 +41,8 @@
                             href="#about">About</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                             href="#skill-bar">Skills</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                        href="#timeline">Career</a></li>
 
                 </ul>
             </div>
@@ -48,22 +50,6 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead bg-primary text-white text-center">
-        <div class="main">
-            <input type="color" id="colorPicker" value="#6a5acd">
-            Hex Code:
-            <input type="text" id="box">
-
-            <script>
-                function myColor() {
-                    let color = document.getElementById("colorPicker").value;
-
-                    document.body.style.backgroundColor = color;
-                    document.getElementById("box").value = color;
-                }
-                document.getElementById("colorPicker").addEventListener("input", myColor);
-
-            </script>
-        </div>
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
             <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
@@ -81,6 +67,23 @@
     </header>
     <!-- Portfolio Section-->
     <section class="page-section portfolio" id="portfolio">
+        <div id="wrap">
+            <div class="main">
+                Is this page too bright? Change it to what you want!!!
+                <input type="color" id="colorPicker" value="#6a5acd">
+
+                <script>
+                    function myColor() {
+                        let color = document.getElementById("colorPicker").value;
+
+                        document.body.style.backgroundColor = color;
+                        document.getElementById("box").value = color;
+                    }
+                    document.getElementById("colorPicker").addEventListener("input", myColor);
+
+                </script>
+            </div>
+        </div>
         <div class="container">
             <!-- Portfolio Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
@@ -267,11 +270,13 @@
     </section>
     <!-- Timeline-->
     <section class="page-section bg-primary text-white mb-0" id="timeline">
-        <section class="section intro">
-            <div class="container">
-                <h1>Career</h1>
-            </div>
-        </section>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 text-white">Career</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
 
         <section class="timeline">
             <ol>

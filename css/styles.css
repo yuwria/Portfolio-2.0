@@ -11117,3 +11117,20 @@ html {
   color: #ffffff;
   color: rgba(0, 0, 0, 0.4);
 }
+
+.desc {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  letter-spacing: 0.03em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.icon-me {
+  text-align: center;
+  font-size: 4em;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30);
+}

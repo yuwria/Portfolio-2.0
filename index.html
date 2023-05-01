@@ -48,6 +48,22 @@
     </nav>
     <!-- Masthead-->
     <header class="masthead bg-primary text-white text-center">
+        <div class="main">
+            <input type="color" id="colorPicker" value="#6a5acd">
+            Hex Code:
+            <input type="text" id="box">
+
+            <script>
+                function myColor() {
+                    let color = document.getElementById("colorPicker").value;
+
+                    document.body.style.backgroundColor = color;
+                    document.getElementById("box").value = color;
+                }
+                document.getElementById("colorPicker").addEventListener("input", myColor);
+
+            </script>
+        </div>
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
             <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
